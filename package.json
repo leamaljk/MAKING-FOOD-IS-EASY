@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "postcss src/styles.css -o public/styles.css",
+    "start": "nodemon -e css,html,js --exec npm run build-css",
+    "watch-css": "tailwindcss -i src/styles.css -o public/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "nodemon": "^3.0.2",
+    "postcss-cli": "^11.0.0"
+  }
+}
